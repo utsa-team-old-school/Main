@@ -1,0 +1,318 @@
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"main.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.main,"ax",%progbits
+  18              		.align	2
+  19              		.global	main
+  20              		.code	16
+  21              		.thumb_func
+  23              	main:
+  24              	.LFB0:
+  25              		.file 1 "../Sources/main.c"
+   1:../Sources/main.c **** #include "derivative.h" /* include peripheral declarations */
+   2:../Sources/main.c **** #include "TFC\TFC.h"
+   3:../Sources/main.c **** 
+   4:../Sources/main.c **** int main(void)
+   5:../Sources/main.c **** {
+  26              		.loc 1 5 0
+  27              		.cfi_startproc
+  28 0000 80B5     		push	{r7, lr}
+  29              	.LCFI0:
+  30              		.cfi_def_cfa_offset 8
+  31              		.cfi_offset 7, -8
+  32              		.cfi_offset 14, -4
+  33 0002 82B0     		sub	sp, sp, #8
+  34              	.LCFI1:
+  35              		.cfi_def_cfa_offset 16
+  36 0004 00AF     		add	r7, sp, #0
+  37              	.LCFI2:
+  38              		.cfi_def_cfa_register 7
+   6:../Sources/main.c **** 	uint32_t t,i=0;
+  39              		.loc 1 6 0
+  40 0006 0023     		mov	r3, #0
+  41 0008 7B60     		str	r3, [r7, #4]
+   7:../Sources/main.c **** 	
+   8:../Sources/main.c **** 	TFC_Init();
+  42              		.loc 1 8 0
+  43 000a FFF7FEFF 		bl	TFC_Init
+  44              	.L16:
+   9:../Sources/main.c **** 	
+  10:../Sources/main.c **** 	for(;;)
+  11:../Sources/main.c **** 	{	   
+  12:../Sources/main.c **** 		//TFC_Task must be called in your main loop.  This keeps certain processing happy (I.E. Serial po
+  13:../Sources/main.c **** 			TFC_Task();
+  45              		.loc 1 13 0
+  46 000e FFF7FEFF 		bl	TFC_Task
+  14:../Sources/main.c **** 
+  15:../Sources/main.c **** 			while (!TFC_PUSH_BUTTON_0_PRESSED) continue;
+  47              		.loc 1 15 0
+  48 0012 C046     		mov	r8, r8
+  49 0014 00E0     		b	.L2
+  50              	.L17:
+  51 0016 C046     		mov	r8, r8
+  52              	.L2:
+  53              		.loc 1 15 0 is_stmt 0
+  54 0018 454B     		ldr	r3, .L18
+  55 001a 1A69     		ldr	r2, [r3, #16]
+  56 001c 8023     		mov	r3, #128
+  57 001e 9B01     		lsl	r3, r3, #6
+  58 0020 1340     		and	r3, r2
+  59 0022 F8D0     		beq	.L17
+  16:../Sources/main.c **** 					{
+  17:../Sources/main.c **** 
+  18:../Sources/main.c **** 						TFC_Ticker[0] =0;
+  60              		.loc 1 18 0 is_stmt 1
+  61 0024 434B     		ldr	r3, .L18+4
+  62 0026 0022     		mov	r2, #0
+  63 0028 1A60     		str	r2, [r3]
+  19:../Sources/main.c **** 						while (TFC_Ticker[0]<=1000)
+  64              		.loc 1 19 0
+  65 002a 0EE0     		b	.L4
+  66              	.L5:
+  20:../Sources/main.c **** 						{
+  21:../Sources/main.c **** 							TFC_SetServo(0,(0));
+  67              		.loc 1 21 0
+  68 002c 0023     		mov	r3, #0
+  69 002e 0020     		mov	r0, #0
+  70 0030 191C     		add	r1, r3, #0
+  71 0032 FFF7FEFF 		bl	TFC_SetServo
+  22:../Sources/main.c **** 							TFC_HBRIDGE_ENABLE;
+  72              		.loc 1 22 0
+  73 0036 404B     		ldr	r3, .L18+8
+  74 0038 8022     		mov	r2, #128
+  75 003a 9203     		lsl	r2, r2, #14
+  76 003c 5A60     		str	r2, [r3, #4]
+  23:../Sources/main.c **** 							TFC_SetMotorPWM(0,0);
+  77              		.loc 1 23 0
+  78 003e 0022     		mov	r2, #0
+  79 0040 0023     		mov	r3, #0
+  80 0042 101C     		add	r0, r2, #0
+  81 0044 191C     		add	r1, r3, #0
+  82 0046 FFF7FEFF 		bl	TFC_SetMotorPWM
+  83              	.L4:
+  19:../Sources/main.c **** 						while (TFC_Ticker[0]<=1000)
+  84              		.loc 1 19 0
+  85 004a 3A4B     		ldr	r3, .L18+4
+  86 004c 1A68     		ldr	r2, [r3]
+  87 004e FA23     		mov	r3, #250
+  88 0050 9B00     		lsl	r3, r3, #2
+  89 0052 9A42     		cmp	r2, r3
+  90 0054 EAD9     		bls	.L5
+  24:../Sources/main.c **** 						}
+  25:../Sources/main.c **** 						while (TFC_Ticker[0]<= 4000 )
+  91              		.loc 1 25 0
+  92 0056 0EE0     		b	.L6
+  93              	.L7:
+  26:../Sources/main.c **** 						{
+  27:../Sources/main.c **** 						TFC_SetServo(0,-1);
+  94              		.loc 1 27 0
+  95 0058 384B     		ldr	r3, .L18+12
+  96 005a 0020     		mov	r0, #0
+  97 005c 191C     		add	r1, r3, #0
+  98 005e FFF7FEFF 		bl	TFC_SetServo
+  28:../Sources/main.c **** 						TFC_HBRIDGE_ENABLE;
+  99              		.loc 1 28 0
+ 100 0062 354B     		ldr	r3, .L18+8
+ 101 0064 8022     		mov	r2, #128
+ 102 0066 9203     		lsl	r2, r2, #14
+ 103 0068 5A60     		str	r2, [r3, #4]
+  29:../Sources/main.c **** 						TFC_SetMotorPWM(.7,.7);
+ 104              		.loc 1 29 0
+ 105 006a 354A     		ldr	r2, .L18+16
+ 106 006c 344B     		ldr	r3, .L18+16
+ 107 006e 101C     		add	r0, r2, #0
+ 108 0070 191C     		add	r1, r3, #0
+ 109 0072 FFF7FEFF 		bl	TFC_SetMotorPWM
+ 110              	.L6:
+  25:../Sources/main.c **** 						while (TFC_Ticker[0]<= 4000 )
+ 111              		.loc 1 25 0
+ 112 0076 2F4B     		ldr	r3, .L18+4
+ 113 0078 1A68     		ldr	r2, [r3]
+ 114 007a FA23     		mov	r3, #250
+ 115 007c 1B01     		lsl	r3, r3, #4
+ 116 007e 9A42     		cmp	r2, r3
+ 117 0080 EAD9     		bls	.L7
+  30:../Sources/main.c **** 						}
+  31:../Sources/main.c **** 						while (TFC_Ticker[0]<= 6000 )
+ 118              		.loc 1 31 0
+ 119 0082 0EE0     		b	.L8
+ 120              	.L9:
+  32:../Sources/main.c **** 						{
+  33:../Sources/main.c **** 							TFC_SetServo(0,.1);
+ 121              		.loc 1 33 0
+ 122 0084 2F4B     		ldr	r3, .L18+20
+ 123 0086 0020     		mov	r0, #0
+ 124 0088 191C     		add	r1, r3, #0
+ 125 008a FFF7FEFF 		bl	TFC_SetServo
+  34:../Sources/main.c **** 							TFC_HBRIDGE_ENABLE;
+ 126              		.loc 1 34 0
+ 127 008e 2A4B     		ldr	r3, .L18+8
+ 128 0090 8022     		mov	r2, #128
+ 129 0092 9203     		lsl	r2, r2, #14
+ 130 0094 5A60     		str	r2, [r3, #4]
+  35:../Sources/main.c **** 							TFC_SetMotorPWM(.7,.7);
+ 131              		.loc 1 35 0
+ 132 0096 2A4A     		ldr	r2, .L18+16
+ 133 0098 294B     		ldr	r3, .L18+16
+ 134 009a 101C     		add	r0, r2, #0
+ 135 009c 191C     		add	r1, r3, #0
+ 136 009e FFF7FEFF 		bl	TFC_SetMotorPWM
+ 137              	.L8:
+  31:../Sources/main.c **** 						while (TFC_Ticker[0]<= 6000 )
+ 138              		.loc 1 31 0
+ 139 00a2 244B     		ldr	r3, .L18+4
+ 140 00a4 1A68     		ldr	r2, [r3]
+ 141 00a6 284B     		ldr	r3, .L18+24
+ 142 00a8 9A42     		cmp	r2, r3
+ 143 00aa EBD9     		bls	.L9
+  36:../Sources/main.c **** 						}
+  37:../Sources/main.c **** 						while (TFC_Ticker[0]<= 8000 )
+ 144              		.loc 1 37 0
+ 145 00ac 0FE0     		b	.L10
+ 146              	.L11:
+  38:../Sources/main.c **** 						{
+  39:../Sources/main.c **** 						TFC_SetServo(0,1);
+ 147              		.loc 1 39 0
+ 148 00ae FE23     		mov	r3, #254
+ 149 00b0 9B05     		lsl	r3, r3, #22
+ 150 00b2 0020     		mov	r0, #0
+ 151 00b4 191C     		add	r1, r3, #0
+ 152 00b6 FFF7FEFF 		bl	TFC_SetServo
+  40:../Sources/main.c **** 						TFC_HBRIDGE_ENABLE;
+ 153              		.loc 1 40 0
+ 154 00ba 1F4B     		ldr	r3, .L18+8
+ 155 00bc 8022     		mov	r2, #128
+ 156 00be 9203     		lsl	r2, r2, #14
+ 157 00c0 5A60     		str	r2, [r3, #4]
+  41:../Sources/main.c **** 						TFC_SetMotorPWM(.7,.7);
+ 158              		.loc 1 41 0
+ 159 00c2 1F4A     		ldr	r2, .L18+16
+ 160 00c4 1E4B     		ldr	r3, .L18+16
+ 161 00c6 101C     		add	r0, r2, #0
+ 162 00c8 191C     		add	r1, r3, #0
+ 163 00ca FFF7FEFF 		bl	TFC_SetMotorPWM
+ 164              	.L10:
+  37:../Sources/main.c **** 						while (TFC_Ticker[0]<= 8000 )
+ 165              		.loc 1 37 0
+ 166 00ce 194B     		ldr	r3, .L18+4
+ 167 00d0 1A68     		ldr	r2, [r3]
+ 168 00d2 FA23     		mov	r3, #250
+ 169 00d4 5B01     		lsl	r3, r3, #5
+ 170 00d6 9A42     		cmp	r2, r3
+ 171 00d8 E9D9     		bls	.L11
+  42:../Sources/main.c **** 						}	
+  43:../Sources/main.c **** 						while (TFC_Ticker[0]<= 10000 )
+ 172              		.loc 1 43 0
+ 173 00da 0EE0     		b	.L12
+ 174              	.L13:
+  44:../Sources/main.c **** 						{
+  45:../Sources/main.c **** 							TFC_SetServo(0,(0));
+ 175              		.loc 1 45 0
+ 176 00dc 0023     		mov	r3, #0
+ 177 00de 0020     		mov	r0, #0
+ 178 00e0 191C     		add	r1, r3, #0
+ 179 00e2 FFF7FEFF 		bl	TFC_SetServo
+  46:../Sources/main.c **** 							TFC_HBRIDGE_ENABLE;
+ 180              		.loc 1 46 0
+ 181 00e6 144B     		ldr	r3, .L18+8
+ 182 00e8 8022     		mov	r2, #128
+ 183 00ea 9203     		lsl	r2, r2, #14
+ 184 00ec 5A60     		str	r2, [r3, #4]
+  47:../Sources/main.c **** 							TFC_SetMotorPWM(.7,.7);
+ 185              		.loc 1 47 0
+ 186 00ee 144A     		ldr	r2, .L18+16
+ 187 00f0 134B     		ldr	r3, .L18+16
+ 188 00f2 101C     		add	r0, r2, #0
+ 189 00f4 191C     		add	r1, r3, #0
+ 190 00f6 FFF7FEFF 		bl	TFC_SetMotorPWM
+ 191              	.L12:
+  43:../Sources/main.c **** 						while (TFC_Ticker[0]<= 10000 )
+ 192              		.loc 1 43 0
+ 193 00fa 0E4B     		ldr	r3, .L18+4
+ 194 00fc 1A68     		ldr	r2, [r3]
+ 195 00fe 134B     		ldr	r3, .L18+28
+ 196 0100 9A42     		cmp	r2, r3
+ 197 0102 EBD9     		bls	.L13
+  48:../Sources/main.c **** 						}	
+  49:../Sources/main.c **** 						while (TFC_Ticker[0]<= 12000 )
+ 198              		.loc 1 49 0
+ 199 0104 0EE0     		b	.L14
+ 200              	.L15:
+  50:../Sources/main.c **** 						{
+  51:../Sources/main.c **** 							TFC_SetServo(0,(0));
+ 201              		.loc 1 51 0
+ 202 0106 0023     		mov	r3, #0
+ 203 0108 0020     		mov	r0, #0
+ 204 010a 191C     		add	r1, r3, #0
+ 205 010c FFF7FEFF 		bl	TFC_SetServo
+  52:../Sources/main.c **** 							TFC_HBRIDGE_ENABLE;
+ 206              		.loc 1 52 0
+ 207 0110 094B     		ldr	r3, .L18+8
+ 208 0112 8022     		mov	r2, #128
+ 209 0114 9203     		lsl	r2, r2, #14
+ 210 0116 5A60     		str	r2, [r3, #4]
+  53:../Sources/main.c **** 							TFC_SetMotorPWM(0,0);
+ 211              		.loc 1 53 0
+ 212 0118 0022     		mov	r2, #0
+ 213 011a 0023     		mov	r3, #0
+ 214 011c 101C     		add	r0, r2, #0
+ 215 011e 191C     		add	r1, r3, #0
+ 216 0120 FFF7FEFF 		bl	TFC_SetMotorPWM
+ 217              	.L14:
+  49:../Sources/main.c **** 						while (TFC_Ticker[0]<= 12000 )
+ 218              		.loc 1 49 0
+ 219 0124 034B     		ldr	r3, .L18+4
+ 220 0126 1A68     		ldr	r2, [r3]
+ 221 0128 094B     		ldr	r3, .L18+32
+ 222 012a 9A42     		cmp	r2, r3
+ 223 012c EBD9     		bls	.L15
+  54:../Sources/main.c **** 						}			
+  55:../Sources/main.c **** 					}
+  56:../Sources/main.c **** 				}
+ 224              		.loc 1 56 0
+ 225 012e 6EE7     		b	.L16
+ 226              	.L19:
+ 227              		.align	2
+ 228              	.L18:
+ 229 0130 80F00F40 		.word	1074786432
+ 230 0134 00000000 		.word	TFC_Ticker
+ 231 0138 00F10F40 		.word	1074786560
+ 232 013c 000080BF 		.word	-1082130432
+ 233 0140 3333333F 		.word	1060320051
+ 234 0144 CDCCCC3D 		.word	1036831949
+ 235 0148 70170000 		.word	6000
+ 236 014c 10270000 		.word	10000
+ 237 0150 E02E0000 		.word	12000
+ 238              		.cfi_endproc
+ 239              	.LFE0:
+ 241              		.text
+ 242              	.Letext0:
+ 243              		.file 2 "C:/Users/Joshua Edwards/workspace/Cup Car Lab A Part 2/Project_Headers/MKL25Z4.h"
+ 244              		.file 3 "D:/Freescale/CW MCU v10.7/MCU/ARM_GCC_Support/ewl/EWL_C/include/cstdint"
+ 245              		.file 4 "C:/Users/Joshua Edwards/workspace/Cup Car Lab A Part 2/Project_Headers/TFC\\TFC_ARM_SysTi
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccIVDyV9.s:18     .text.main:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccIVDyV9.s:23     .text.main:00000000 main
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccIVDyV9.s:229    .text.main:00000130 $d
+                     .debug_frame:00000010 $d
+
+UNDEFINED SYMBOLS
+TFC_Init
+TFC_Task
+TFC_SetServo
+TFC_SetMotorPWM
+TFC_Ticker
