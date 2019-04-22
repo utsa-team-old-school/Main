@@ -4,10 +4,14 @@
 -g3
 -gdwarf-2
 -gstrict-dwarf
--I"C:/Users/Joshua Edwards/workspace/Tilt/Project_Headers"
--I"C:/Users/Joshua Edwards/workspace/Tilt/Project_Settings/Startup_Code"
+-I"C:/Users/Joshua Edwards/workspace/KL25_MultiADC_DMA/Project_Headers"
+-I"C:/Users/Joshua Edwards/workspace/KL25_MultiADC_DMA/Project_Settings/Startup_Code"
 -I"D:/Freescale/CW MCU v10.7/MCU/ARM_GCC_Support/ewl/EWL_C/include"
 -I"D:/Freescale/CW MCU v10.7/MCU/ARM_GCC_Support/ewl/EWL_Runtime/include"
+-I"C:/Users/Joshua Edwards/workspace/KL25_MultiADC_DMA/Generated_Code"
+-I"C:/Users/Joshua Edwards/workspace/KL25_MultiADC_DMA/Sources"
+-I"D:/Freescale/CW MCU v10.7/MCU/ProcessorExpert/lib/Kinetis/iofiles"
+-I"D:/Freescale/CW MCU v10.7/MCU/ProcessorExpert/lib/Kinetis/pdd/inc"
 -O0
 -ffunction-sections
 -fdata-sections

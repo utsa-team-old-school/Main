@@ -20,7 +20,7 @@ Project_Settings/Startup_Code/__arm_start.o: \
  D:/Freescale/CW\ MCU\ v10.7/MCU/ARM_GCC_Support/ewl/EWL_C/include/stdint.h \
  D:/Freescale/CW\ MCU\ v10.7/MCU/ARM_GCC_Support/ewl/EWL_C/include/cstdint \
  D:/Freescale/CW\ MCU\ v10.7/MCU/ARM_GCC_Support/ewl/EWL_C/include/limits_api.h \
- C:/Users/Joshua\ Edwards/workspace/Tilt/Project_Settings/Startup_Code/runtime_configuration.h
+ C:/Users/Joshua\ Edwards/workspace/KL25_MultiADC_DMA/Project_Settings/Startup_Code/runtime_configuration.h
 
 D:/Freescale/CW\ MCU\ v10.7/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -62,4 +62,4 @@ D:/Freescale/CW\ MCU\ v10.7/MCU/ARM_GCC_Support/ewl/EWL_C/include/cstdint:
 
 D:/Freescale/CW\ MCU\ v10.7/MCU/ARM_GCC_Support/ewl/EWL_C/include/limits_api.h:
 
-C:/Users/Joshua\ Edwards/workspace/Tilt/Project_Settings/Startup_Code/runtime_configuration.h:
+C:/Users/Joshua\ Edwards/workspace/KL25_MultiADC_DMA/Project_Settings/Startup_Code/runtime_configuration.h:

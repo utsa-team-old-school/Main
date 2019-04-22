@@ -4,13 +4,13 @@
 /*##                                   */
 /*##     Filename  : ProcessorExpert.ld */
 /*##                                   */
-/*##     Project   : Tilt Table        */
+/*##     Project   : ProcessorExpert   */
 /*##                                   */
 /*##     Processor : MKL25Z128VLK4     */
 /*##                                   */
 /*##     Compiler  : GNU C Compiler    */
 /*##                                   */
-/*##     Date/Time : 2019-03-21, 15:16, # CodeGen: 0 */
+/*##     Date/Time : 2019-03-27, 16:14, # CodeGen: 58 */
 /*##                                   */
 /*##     Abstract  :                   */
 /*##                                   */
@@ -39,7 +39,8 @@ __stack_size = 0x0400;                 /* required amount of stack */
 MEMORY {
   m_interrupts (RX) : ORIGIN = 0x00000000, LENGTH = 0x000000C0
   m_text      (RX) : ORIGIN = 0x00000410, LENGTH = 0x0001FBF0
-  m_data      (RW) : ORIGIN = 0x1FFFF000, LENGTH = 0x00004000
+  m_data_1FFFF000 (RW) : ORIGIN = 0x1FFFF000, LENGTH = 0x00001000
+  m_data      (RW) : ORIGIN = 0x20000000, LENGTH = 0x00003000
   m_cfmprotrom  (RX) : ORIGIN = 0x00000400, LENGTH = 0x00000010
 }
 
@@ -170,6 +171,18 @@ SECTIONS
 
   ___data_size = _edata - _sdata;
 
+  ___m_data_1FFFF000_ROMStart = ___ROM_AT + SIZEOF(.data);
+  .m_data_1FFFF000 : AT(___m_data_1FFFF000_ROMStart)
+  {
+     . = ALIGN(4);
+     ___m_data_1FFFF000_RAMStart = .;
+     *(.m_data_1FFFF000) /* This is an User defined section */
+     ___m_data_1FFFF000_RAMEnd = .;
+     . = ALIGN(4);
+  } > m_data_1FFFF000
+  ___m_data_1FFFF000_ROMSize = ___m_data_1FFFF000_RAMEnd - ___m_data_1FFFF000_RAMStart;
+
+
 
   /* Uninitialized data section */
   . = ALIGN(4);
@@ -188,13 +201,16 @@ SECTIONS
  	  PROVIDE ( __bss_end__ = __END_BSS );
   } > m_data
 
-  _romp_at = ___ROM_AT + SIZEOF(.data);
+  _romp_at = ___ROM_AT + SIZEOF(.data) +SIZEOF(.m_data_1FFFF000);
   .romp : AT(_romp_at)
   {
     __S_romp = _romp_at;
     LONG(___ROM_AT);
     LONG(_sdata);
     LONG(___data_size);
+    LONG(___m_data_1FFFF000_ROMStart);
+    LONG(___m_data_1FFFF000_RAMStart);
+    LONG(___m_data_1FFFF000_ROMSize);
     LONG(0);
     LONG(0);
     LONG(0);
