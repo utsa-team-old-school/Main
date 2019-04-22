@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 29
+#Progress monitor hint: 18
 first : all
 -include ../makefile.init
 
@@ -15,8 +15,8 @@ RM := "$(GNU_Make_Install_DirEnv)/rm" -rf
 -include sources.mk
 -include subdir.mk
 -include Sources/subdir.mk
+-include Sources/TFC/subdir.mk
 -include Project_Settings/Startup_Code/subdir.mk
--include Generated_Code/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -44,30 +44,30 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-KL25_MultiADC_DMA.elf \
+Tilt.elf \
 
 EXECUTABLES_QUOTED += \
-"KL25_MultiADC_DMA.elf" \
+"Tilt.elf" \
 
 EXECUTABLES_OS_FORMAT += \
-KL25_MultiADC_DMA.elf \
+Tilt.elf \
 
 
 # All Target
-all: warning-messages explicit-dependencies KL25_MultiADC_DMA.elf secondary-outputs
+all: warning-messages explicit-dependencies Tilt.elf secondary-outputs
 
 # Tool invocations
-KL25_MultiADC_DMA.elf: $(OBJS) $(USER_OBJS) ../Project_Settings/Linker_Files/ProcessorExpert.ld
+Tilt.elf: $(OBJS) $(USER_OBJS) ../Project_Settings/Linker_Files/MKL25Z128_flash.ld
 	@echo 'Building target: $@'
-	@echo 'Executing target #30 $@'
+	@echo 'Executing target #19 $@'
 	@echo 'Invoking: ARM Ltd Windows GCC C Linker'
-	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED) @"KL25_MultiADC_DMA.args" -o"KL25_MultiADC_DMA.elf"
+	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED) @"Tilt.args" -o"Tilt.elf"
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(S_DEPS_QUOTED) "./*/*.o" "./*/*/*.o"  $(S_UPPER_DEPS_QUOTED) $(ASM_DEPS_QUOTED) $(ASM_UPPER_DEPS_QUOTED) $(SX_DEPS_QUOTED) $(EXECUTABLES_QUOTED) "./*/*.d" "./*/*/*.d"  $(ProjDirPath)/FLASH/KL25_MultiADC_DMA.elf
+	-$(RM) $(S_DEPS_QUOTED) "./*/*/*.o" "./*/*.o"  $(S_UPPER_DEPS_QUOTED) $(ASM_DEPS_QUOTED) $(ASM_UPPER_DEPS_QUOTED) $(SX_DEPS_QUOTED) $(EXECUTABLES_QUOTED) "./*/*/*.d" "./*/*.d"  $(ProjDirPath)/FLASH/Tilt.elf
 	-@echo ' '
 
 secondary-outputs:
@@ -77,7 +77,7 @@ secondary-outputs:
 
 -include ../makefile.targets
 
-explicit-dependencies: ../Project_Settings/Linker_Files/ProcessorExpert.ld 
+explicit-dependencies: ../Project_Settings/Linker_Files/MKL25Z128_flash.ld 
 
 warning-messages: 
 
