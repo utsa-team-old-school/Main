@@ -208,7 +208,7 @@
   42:../Sources/TFC/TFC_LineScanCamera.c **** 		float t;
   43:../Sources/TFC/TFC_LineScanCamera.c **** 		
   44:../Sources/TFC/TFC_LineScanCamera.c **** 		//Figure out how many Pit ticks we need for for the exposure time
-  45:../Sources/TFC/TFC_LineScanCamera.c **** 		t = (TimeIn_uS /1000000.0) * (float)(PERIPHERAL_BUS_CLOCK);
+  45:../Sources/TFC/TFC_LineScanCamera.c **** 		t = (TimeIn_uS /1500000.0) * (float)(PERIPHERAL_BUS_CLOCK);
  172              		.loc 1 45 0
  173 0008 7868     		ldr	r0, [r7, #4]
  174 000a FFF7FEFF 		bl	__aeabi_ui2d
@@ -253,7 +253,7 @@
  210 0054 C046C046 		.align	3
  211              	.L5:
  212 0058 00000000 		.word	0
- 213 005c 80842E41 		.word	1093567616
+ 213 005c 60E33641 		.word	1094116192
  214 0060 00000000 		.word	0
  215 0064 60E37641 		.word	1098310496
  216 0068 00700340 		.word	1073967104
@@ -272,16 +272,16 @@ DEFINED SYMBOLS
                             *COM*:00000200 LineScanImage0Buffer
                             *COM*:00000200 LineScanImage1Buffer
                             *COM*:00000001 LineScanWorkingBuffer
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccDtxLlx.s:28     .bss.LineScanImageReady:00000000 LineScanImageReady
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccDtxLlx.s:29     .bss.LineScanImageReady:00000000 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccDtxLlx.s:31     .text.TFC_InitLineScanCamera:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccDtxLlx.s:36     .text.TFC_InitLineScanCamera:00000000 TFC_InitLineScanCamera
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccDtxLlx.s:126    .text.TFC_InitLineScanCamera:00000078 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccDtxLlx.s:150    .text.TFC_SetLineScanExposureTime:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccDtxLlx.s:155    .text.TFC_SetLineScanExposureTime:00000000 TFC_SetLineScanExposureTime
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccDtxLlx.s:212    .text.TFC_SetLineScanExposureTime:00000058 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cch3Umb5.s:28     .bss.LineScanImageReady:00000000 LineScanImageReady
+C:\Users\JOSHUA~1\AppData\Local\Temp\cch3Umb5.s:29     .bss.LineScanImageReady:00000000 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cch3Umb5.s:31     .text.TFC_InitLineScanCamera:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cch3Umb5.s:36     .text.TFC_InitLineScanCamera:00000000 TFC_InitLineScanCamera
+C:\Users\JOSHUA~1\AppData\Local\Temp\cch3Umb5.s:126    .text.TFC_InitLineScanCamera:00000078 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cch3Umb5.s:150    .text.TFC_SetLineScanExposureTime:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cch3Umb5.s:155    .text.TFC_SetLineScanExposureTime:00000000 TFC_SetLineScanExposureTime
+C:\Users\JOSHUA~1\AppData\Local\Temp\cch3Umb5.s:212    .text.TFC_SetLineScanExposureTime:00000058 $d
                      .debug_frame:00000010 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccDtxLlx.s:220    .text.TFC_SetLineScanExposureTime:0000006c $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cch3Umb5.s:220    .text.TFC_SetLineScanExposureTime:0000006c $t
 
 UNDEFINED SYMBOLS
 __aeabi_ui2d

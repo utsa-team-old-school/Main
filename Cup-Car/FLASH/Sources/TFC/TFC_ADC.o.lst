@@ -1922,39 +1922,39 @@ DEFINED SYMBOLS
                             *ABS*:00000000 TFC_ADC.c
                             *COM*:00000004 PotADC_Value
                             *COM*:00000002 BatSenseADC_Value
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:22     .bss.CurrentADC_State:00000000 CurrentADC_State
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:23     .bss.CurrentADC_State:00000000 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:28     .bss.CurrentLineScanPixel:00000000 CurrentLineScanPixel
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:29     .bss.CurrentLineScanPixel:00000000 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:34     .bss.CurrentLineScanChannel:00000000 CurrentLineScanChannel
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:35     .bss.CurrentLineScanChannel:00000000 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:37     .text.ADC_Cal:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:42     .text.ADC_Cal:00000000 ADC_Cal
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:309    .text.ADC_Cal:000001b0 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:314    .text.ADC_Config_Alt:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:319    .text.ADC_Config_Alt:00000000 ADC_Config_Alt
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:393    .text.ADC_Read_Cal:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:398    .text.ADC_Read_Cal:00000000 ADC_Read_Cal
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:526    .text.InitADC0:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:531    .text.InitADC0:00000000 InitADC0
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:624    .text.InitADC0:00000084 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:631    .text.TFC_InitADCs:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:636    .text.TFC_InitADCs:00000000 TFC_InitADCs
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:701    .text.TFC_InitADCs:0000005c $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:710    .text.PIT_IRQHandler:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:715    .text.PIT_IRQHandler:00000000 PIT_IRQHandler
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:759    .text.PIT_IRQHandler:00000030 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:767    .text.ADC0_IRQHandler:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:772    .text.ADC0_IRQHandler:00000000 ADC0_IRQHandler
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:1105   .text.ADC0_IRQHandler:000001dc $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:1132   .text.TFC_ReadPot:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:1137   .text.TFC_ReadPot:00000000 TFC_ReadPot
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:1231   .text.TFC_ReadPot:000000a8 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:1242   .text.TFC_ReadBatteryVoltage:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:1247   .text.TFC_ReadBatteryVoltage:00000000 TFC_ReadBatteryVoltage
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:1282   .text.TFC_ReadBatteryVoltage:0000002c $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:22     .bss.CurrentADC_State:00000000 CurrentADC_State
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:23     .bss.CurrentADC_State:00000000 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:28     .bss.CurrentLineScanPixel:00000000 CurrentLineScanPixel
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:29     .bss.CurrentLineScanPixel:00000000 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:34     .bss.CurrentLineScanChannel:00000000 CurrentLineScanChannel
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:35     .bss.CurrentLineScanChannel:00000000 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:37     .text.ADC_Cal:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:42     .text.ADC_Cal:00000000 ADC_Cal
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:309    .text.ADC_Cal:000001b0 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:314    .text.ADC_Config_Alt:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:319    .text.ADC_Config_Alt:00000000 ADC_Config_Alt
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:393    .text.ADC_Read_Cal:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:398    .text.ADC_Read_Cal:00000000 ADC_Read_Cal
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:526    .text.InitADC0:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:531    .text.InitADC0:00000000 InitADC0
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:624    .text.InitADC0:00000084 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:631    .text.TFC_InitADCs:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:636    .text.TFC_InitADCs:00000000 TFC_InitADCs
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:701    .text.TFC_InitADCs:0000005c $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:710    .text.PIT_IRQHandler:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:715    .text.PIT_IRQHandler:00000000 PIT_IRQHandler
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:759    .text.PIT_IRQHandler:00000030 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:767    .text.ADC0_IRQHandler:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:772    .text.ADC0_IRQHandler:00000000 ADC0_IRQHandler
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:1105   .text.ADC0_IRQHandler:000001dc $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:1132   .text.TFC_ReadPot:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:1137   .text.TFC_ReadPot:00000000 TFC_ReadPot
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:1231   .text.TFC_ReadPot:000000a8 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:1242   .text.TFC_ReadBatteryVoltage:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:1247   .text.TFC_ReadBatteryVoltage:00000000 TFC_ReadBatteryVoltage
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:1282   .text.TFC_ReadBatteryVoltage:0000002c $d
                      .debug_frame:00000010 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccNeQJZr.s:1241   .text.TFC_ReadPot:000000bc $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccM0DVN1.s:1241   .text.TFC_ReadPot:000000bc $t
 
 UNDEFINED SYMBOLS
 disable_irq

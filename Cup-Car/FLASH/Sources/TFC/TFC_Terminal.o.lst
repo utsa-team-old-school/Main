@@ -1745,44 +1745,44 @@
  1355              		.file 6 "C:/Users/Joshua Edwards/workspace/Cup Car Lab A/Project_Headers/TFC\\TFC_UART.h"
 DEFINED SYMBOLS
                             *ABS*:00000000 TFC_Terminal.c
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:59     .data.MyTerminalCallbackRecords:00000000 MyTerminalCallbackRecords
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:19     .rodata:00000000 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:56     .data.MyTerminalCallbackRecords:00000000 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:232    .text.TerminalCmd_Help:00000000 TerminalCmd_Help
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:492    .text.TerminalCmd_GetLineScan:00000000 TerminalCmd_GetLineScan
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:679    .text.TerminalCmd_S:00000000 TerminalCmd_S
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:794    .text.TerminalCmd_H:00000000 TerminalCmd_H
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:375    .text.TerminalCmd_E:00000000 TerminalCmd_E
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:426    .text.TerminalCmd_D:00000000 TerminalCmd_D
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:59     .data.MyTerminalCallbackRecords:00000000 MyTerminalCallbackRecords
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:19     .rodata:00000000 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:56     .data.MyTerminalCallbackRecords:00000000 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:232    .text.TerminalCmd_Help:00000000 TerminalCmd_Help
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:492    .text.TerminalCmd_GetLineScan:00000000 TerminalCmd_GetLineScan
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:679    .text.TerminalCmd_S:00000000 TerminalCmd_S
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:794    .text.TerminalCmd_H:00000000 TerminalCmd_H
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:375    .text.TerminalCmd_E:00000000 TerminalCmd_E
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:426    .text.TerminalCmd_D:00000000 TerminalCmd_D
                             *COM*:00000040 TerminalLineBuf
                             *COM*:00000001 TerminalPos
                             *COM*:00000021 TerminalCmdBuf
                             *COM*:00000020 TerminalArgs
                             *COM*:00000001 NextCharIn
                             *COM*:00000001 CmdFound
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:105    .text.TerminalBootMsg:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:110    .text.TerminalBootMsg:00000000 TerminalBootMsg
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:166    .text.TerminalBootMsg:00000050 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:177    .text.TFC_InitTerminal:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:182    .text.TFC_InitTerminal:00000000 TFC_InitTerminal
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:211    .text.TFC_InitTerminal:00000018 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:227    .text.TerminalCmd_Help:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:324    .text.TerminalCmd_Help:0000008c $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:334    .text.TerminalCmd_Reboot:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:339    .text.TerminalCmd_Reboot:00000000 TerminalCmd_Reboot
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:370    .text.TerminalCmd_E:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:410    .text.TerminalCmd_E:00000024 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:421    .text.TerminalCmd_D:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:467    .text.TerminalCmd_D:00000030 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:487    .text.TerminalCmd_GetLineScan:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:648    .text.TerminalCmd_GetLineScan:000000f8 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:674    .text.TerminalCmd_S:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:771    .text.TerminalCmd_S:00000098 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:789    .text.TerminalCmd_H:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:884    .text.TerminalCmd_H:00000094 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:906    .text.TFC_ProcessTerminal:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:911    .text.TFC_ProcessTerminal:00000000 TFC_ProcessTerminal
-C:\Users\JOSHUA~1\AppData\Local\Temp\cc7akFmA.s:1333   .text.TFC_ProcessTerminal:0000028c $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:105    .text.TerminalBootMsg:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:110    .text.TerminalBootMsg:00000000 TerminalBootMsg
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:166    .text.TerminalBootMsg:00000050 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:177    .text.TFC_InitTerminal:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:182    .text.TFC_InitTerminal:00000000 TFC_InitTerminal
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:211    .text.TFC_InitTerminal:00000018 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:227    .text.TerminalCmd_Help:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:324    .text.TerminalCmd_Help:0000008c $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:334    .text.TerminalCmd_Reboot:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:339    .text.TerminalCmd_Reboot:00000000 TerminalCmd_Reboot
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:370    .text.TerminalCmd_E:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:410    .text.TerminalCmd_E:00000024 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:421    .text.TerminalCmd_D:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:467    .text.TerminalCmd_D:00000030 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:487    .text.TerminalCmd_GetLineScan:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:648    .text.TerminalCmd_GetLineScan:000000f8 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:674    .text.TerminalCmd_S:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:771    .text.TerminalCmd_S:00000098 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:789    .text.TerminalCmd_H:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:884    .text.TerminalCmd_H:00000094 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:906    .text.TFC_ProcessTerminal:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:911    .text.TFC_ProcessTerminal:00000000 TFC_ProcessTerminal
+C:\Users\JOSHUA~1\AppData\Local\Temp\cckSitt9.s:1333   .text.TFC_ProcessTerminal:0000028c $d
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

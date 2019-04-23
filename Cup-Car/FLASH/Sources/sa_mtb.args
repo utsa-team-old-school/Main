@@ -4,8 +4,8 @@
 -g3
 -gdwarf-2
 -gstrict-dwarf
--I"C:/Users/Joshua Edwards/workspace/Cup Car Lab A Part 2/Project_Headers"
--I"C:/Users/Joshua Edwards/workspace/Cup Car Lab A Part 2/Project_Settings/Startup_Code"
+-I"C:/Users/Joshua Edwards/workspace/Cup Car Lab A/Project_Headers"
+-I"C:/Users/Joshua Edwards/workspace/Cup Car Lab A/Project_Settings/Startup_Code"
 -I"D:/Freescale/CW MCU v10.7/MCU/ARM_GCC_Support/ewl/EWL_C/include"
 -I"D:/Freescale/CW MCU v10.7/MCU/ARM_GCC_Support/ewl/EWL_Runtime/include"
 -O0

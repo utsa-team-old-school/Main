@@ -649,25 +649,25 @@
  562              		.file 5 "<built-in>"
 DEFINED SYMBOLS
                             *ABS*:00000000 TFC_Queue.c
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:18     .bss.StringBuffer:00000000 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:21     .bss.StringBuffer:00000000 StringBuffer
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:24     .text.InitByteQueue:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:29     .text.InitByteQueue:00000000 InitByteQueue
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:111    .text.BytesInQueue:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:116    .text.BytesInQueue:00000000 BytesInQueue
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:181    .text.ByteEnqueue:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:186    .text.ByteEnqueue:00000000 ByteEnqueue
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:260    .text.ByteEnqueue:00000060 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:265    .text.ByteArrayEnqueue:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:270    .text.ByteArrayEnqueue:00000000 ByteArrayEnqueue
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:337    .text.Qprintf:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:342    .text.Qprintf:00000000 Qprintf
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:398    .text.Qprintf:0000004c $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:403    .text.ByteDequeue:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:408    .text.ByteDequeue:00000000 ByteDequeue
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:477    .text.ByteDequeue:00000058 $d
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:482    .text.ForcedByteDequeue:00000000 $t
-C:\Users\JOSHUA~1\AppData\Local\Temp\ccVWROoz.s:487    .text.ForcedByteDequeue:00000000 ForcedByteDequeue
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:18     .bss.StringBuffer:00000000 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:21     .bss.StringBuffer:00000000 StringBuffer
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:24     .text.InitByteQueue:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:29     .text.InitByteQueue:00000000 InitByteQueue
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:111    .text.BytesInQueue:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:116    .text.BytesInQueue:00000000 BytesInQueue
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:181    .text.ByteEnqueue:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:186    .text.ByteEnqueue:00000000 ByteEnqueue
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:260    .text.ByteEnqueue:00000060 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:265    .text.ByteArrayEnqueue:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:270    .text.ByteArrayEnqueue:00000000 ByteArrayEnqueue
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:337    .text.Qprintf:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:342    .text.Qprintf:00000000 Qprintf
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:398    .text.Qprintf:0000004c $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:403    .text.ByteDequeue:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:408    .text.ByteDequeue:00000000 ByteDequeue
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:477    .text.ByteDequeue:00000058 $d
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:482    .text.ForcedByteDequeue:00000000 $t
+C:\Users\JOSHUA~1\AppData\Local\Temp\ccWTD0Z6.s:487    .text.ForcedByteDequeue:00000000 ForcedByteDequeue
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

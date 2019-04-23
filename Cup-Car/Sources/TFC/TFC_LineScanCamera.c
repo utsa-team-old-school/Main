@@ -42,7 +42,7 @@ void TFC_SetLineScanExposureTime(uint32_t  TimeIn_uS)
 		float t;
 		
 		//Figure out how many Pit ticks we need for for the exposure time
-		t = (TimeIn_uS /1000000.0) * (float)(PERIPHERAL_BUS_CLOCK);
+		t = (TimeIn_uS /1500000.0) * (float)(PERIPHERAL_BUS_CLOCK);
 		PIT_LDVAL0 = (uint32_t)t;
 	
 }

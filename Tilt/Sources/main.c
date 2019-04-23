@@ -7,15 +7,15 @@ float computeY(float, unsigned long);
 unsigned long ClastTime, CSampleTime, CSampleTimeInSec;
 float const xSetPoint = 0;
 float xLastInput;
-float const xKP = .88, xKI = 1, xKD = 8; //The values that worked: 0.88 8
-float const xOutMin = -1, xOutMax = 1;
+float const xKP = .88, xKI = 1, xKD = 7.5; //The values that worked: 0.88 8
+float const xOutMin = -.9, xOutMax = .5;
 //end of working variables for compute routine
 //working variables for compute routine
 //unsigned long ClastTime1, CSampleTime1, CSampleTimeInSec1;
 float const ySetPoint = 0;
 float yLastInput;
-float const yKP = .88, yKI = 1, yKD = 8; //.88 8
-float const yOutMin = -1, yOutMax = 1;
+float const yKP = .88, yKI = 1, yKD = 7.5; //.88 8
+float const yOutMin = -.9, yOutMax = .5;
 //end of working variables for compute routine
 
 int main(void)
